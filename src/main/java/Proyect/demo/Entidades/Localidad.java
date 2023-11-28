@@ -17,8 +17,8 @@ import lombok.Setter;
 
 public class Localidad extends Base{
 
-    @Column(name = "nombreLocalidad")
-    private String nombreLocalidad;
+    @Column(name = "nombre")
+    private String nombre;
     @Column(name = "codPostal")
     private String codPostal;
 }

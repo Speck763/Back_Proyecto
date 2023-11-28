@@ -22,8 +22,8 @@ public class Producto extends Base{
     private String nombreProducto;
     @Column(name = "precioCompra")
     private double precioCompra;
-    @Column(name = "precioVanta")
-    private double precioVanta;
+    @Column(name = "precioVenta")
+    private double precioVenta;
     @Column(name = "stock")
     private int stock;
 }

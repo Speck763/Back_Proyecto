@@ -15,6 +15,7 @@ import lombok.Setter;
 @Setter
 @Table(name = "FormularioReembolso")
 public class FormularioReembolso extends Base{
+
     @Column(name = "descripcion")
     private String descripcion;
 }
