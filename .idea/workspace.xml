@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="no entendi este">
+    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="El diablo v1">
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/CategoriaController.java" afterDir="false" />
@@ -167,6 +167,7 @@
     <MESSAGE value="se prendio esta mierda, pdt tuve que volver a haecerlo" />
     <MESSAGE value="." />
     <MESSAGE value="no entendi este" />
-    <option name="LAST_COMMIT_MESSAGE" value="no entendi este" />
+    <MESSAGE value="El diablo v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="El diablo v1" />
   </component>
 </project>
