@@ -33,9 +33,9 @@ public class DomicilioServiceImpl  extends BaseServiceImpl<Domicilio,Long> imple
     }
 
     @Override
-    public Page<Domicilio> findAll(Pageable pageable) throws Exception {
+    public Page<Domicilio> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Domicilio> domicilios= DomicilioRepository.search(filtro);
+            Page<Domicilio> domicilios= DomicilioRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

@@ -11,5 +11,5 @@ import java.util.List;
 public interface LocalidadService extends BaseService<Localidad, Long> {
 
     List<Localidad> search(String filtro) throws Exception;
-    Page<Localidad> findAll(Pageable pageable) throws Exception;
+    Page<Localidad> search(String filtro, Pageable pageable) throws Exception;
 }

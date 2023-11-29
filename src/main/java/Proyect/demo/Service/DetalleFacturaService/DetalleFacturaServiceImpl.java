@@ -34,9 +34,9 @@ public class DetalleFacturaServiceImpl extends BaseServiceImpl<DetalleFactura,Lo
     }
 
     @Override
-    public Page<DetalleFactura> findAll(Pageable pageable) throws Exception {
+    public Page<DetalleFactura> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<DetalleFactura> detalleFacturas = DetalleFacturaRepository.search(filtro);
+            Page<DetalleFactura> detalleFacturas = DetalleFacturaRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

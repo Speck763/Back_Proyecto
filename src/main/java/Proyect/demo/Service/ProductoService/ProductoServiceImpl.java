@@ -32,9 +32,9 @@ public class ProductoServiceImpl extends BaseServiceImpl<Producto,Long> implemen
     }
 
     @Override
-    public Page<Producto> findAll(Pageable pageable) throws Exception {
+    public Page<Producto> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Producto> productos = ProductoRepository.search(filtro);
+            Page<Producto> productos = ProductoRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

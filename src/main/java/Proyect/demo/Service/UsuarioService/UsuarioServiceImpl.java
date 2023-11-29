@@ -32,9 +32,9 @@ public class UsuarioServiceImpl extends BaseServiceImpl<Usuario,Long> implements
     }
 
     @Override
-    public Page<Usuario> findAll(Pageable pageable) throws Exception {
+    public Page<Usuario> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Usuario> usuarios = UsuarioRepository.search(filtro);
+            Page<Usuario> usuarios = UsuarioRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

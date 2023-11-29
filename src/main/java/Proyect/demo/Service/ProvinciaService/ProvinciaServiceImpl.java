@@ -32,9 +32,9 @@ public class ProvinciaServiceImpl extends BaseServiceImpl<Provincia,Long> implem
     }
 
     @Override
-    public Page<Provincia> findAll(Pageable pageable) throws Exception {
+    public Page<Provincia> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Provincia> provincias = ProvinciaRepository.search(filtro);
+            Page<Provincia> provincias = ProvinciaRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

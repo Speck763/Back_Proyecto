@@ -32,7 +32,7 @@ public class CategoriaServiceImpl extends BaseServiceImpl<Categoria, Long> imple
     }
 
     @Override
-    public  Page<Categoria> findAll(Pageable pageable) throws Exception {
+    public  Page<Categoria> search(String filtro, Pageable pageable) throws Exception {
         try{
             Page<Categoria> categorias = CategoriaRepository.search(filtro);
         } catch (Exception e) {

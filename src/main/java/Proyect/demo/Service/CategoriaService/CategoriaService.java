@@ -10,6 +10,6 @@ import java.util.List;
 public interface CategoriaService extends BaseService<Categoria, Long> {
 
     List<Categoria> search(String filtro) throws Exception;
-    Page<Categoria> findAll(Pageable pageable) throws Exception;
+    Page<Categoria> search(String filtro, Pageable pageable) throws Exception;
 
 }

@@ -10,5 +10,5 @@ import java.util.List;
 public interface ProvinciaService extends BaseService<Provincia, Long> {
 
     List<Provincia> search(String filtro) throws Exception;
-    Page<Provincia> findAll(Pageable pageable) throws Exception;
+    Page<Provincia> search(String filtro, Pageable pageable) throws Exception;
 }

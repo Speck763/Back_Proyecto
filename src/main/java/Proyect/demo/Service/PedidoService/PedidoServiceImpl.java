@@ -32,9 +32,9 @@ public class PedidoServiceImpl extends BaseServiceImpl<Pedido,Long> implements P
     }
 
     @Override
-    public Page<Pedido> findAll(Pageable pageable) throws Exception {
+    public Page<Pedido> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Pedido> pedidos = PedidoRepository.search(filtro);
+            Page<Pedido> pedidos = PedidoRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

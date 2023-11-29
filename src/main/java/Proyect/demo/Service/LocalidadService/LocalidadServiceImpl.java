@@ -33,9 +33,9 @@ public class LocalidadServiceImpl extends BaseServiceImpl<Localidad,Long> implem
     }
 
     @Override
-    public Page<Localidad> findAll(Pageable pageable) throws Exception {
+    public Page<Localidad> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Localidad> localidades = LocalidadRepository.search(filtro);
+            Page<Localidad> localidades = LocalidadRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

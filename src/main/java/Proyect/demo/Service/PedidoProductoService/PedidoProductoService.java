@@ -11,5 +11,5 @@ import java.util.List;
 public interface PedidoProductoService extends BaseService<PedidoProducto, Long> {
 
     List<PedidoProducto> search(String filtro) throws Exception;
-    Page<PedidoProducto> findAll(Pageable pageable) throws Exception;
+    Page<PedidoProducto> search(String filtro, Pageable pageable) throws Exception;
 }

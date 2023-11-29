@@ -23,7 +23,7 @@ public class FacturaServiceImpl extends BaseServiceImpl<Factura,Long> implements
     }
 
     @Override
-    public List<Factura> search(String filtro) throws Exception {
+    public List<Factura> search(String filtro ) throws Exception {
         try {
             List<Factura> facturas = FacturaRepository.search(filtro);
         } catch (Exception e) {
@@ -32,9 +32,9 @@ public class FacturaServiceImpl extends BaseServiceImpl<Factura,Long> implements
     }
 
     @Override
-    public Page<Factura> findAll(Pageable pageable) throws Exception {
+    public Page<Factura> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Factura> facturas = FacturaRepository.search(filtro);
+            Page<Factura> facturas = FacturaRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

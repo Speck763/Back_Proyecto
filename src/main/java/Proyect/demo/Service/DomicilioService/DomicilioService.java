@@ -12,6 +12,6 @@ import java.util.List;
 public interface DomicilioService extends BaseService<Domicilio, Long> {
 
     List<Domicilio> search(String filtro) throws Exception;
-    Page<Domicilio> findAll(Pageable pageable) throws Exception;
+    Page<Domicilio> search(String filtro , Pageable pageable) throws Exception;
 
 }

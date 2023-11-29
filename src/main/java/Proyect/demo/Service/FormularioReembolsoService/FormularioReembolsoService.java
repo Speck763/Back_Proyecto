@@ -11,5 +11,5 @@ import java.util.List;
 public interface FormularioReembolsoService extends BaseService<FormularioReembolso, Long> {
 
     List<FormularioReembolso> search(String filtro) throws Exception;
-    Page<FormularioReembolso> findAll(Pageable pageable) throws Exception;
+    Page<FormularioReembolso> search(String filtro, Pageable pageable) throws Exception;
 }

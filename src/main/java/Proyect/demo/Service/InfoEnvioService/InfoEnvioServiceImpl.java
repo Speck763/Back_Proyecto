@@ -32,9 +32,9 @@ public class InfoEnvioServiceImpl extends BaseServiceImpl<InfoEnvio,Long> implem
     }
 
     @Override
-    public Page<InfoEnvio> findAll(Pageable pageable) throws Exception {
+    public Page<InfoEnvio> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<InfoEnvio> infoEnvios = InfoEnvioRepository.search(filtro);
+            Page<InfoEnvio> infoEnvios = InfoEnvioRepository.search(filtro, pageable);
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

@@ -11,5 +11,5 @@ import java.util.List;
 public interface InfoEnvioService extends BaseService<InfoEnvio, Long> {
 
     List<InfoEnvio> search(String filtro) throws Exception;
-    Page<InfoEnvio> findAll(Pageable pageable) throws Exception;
+    Page<InfoEnvio> search(String filtro, Pageable pageable) throws Exception;
 }
