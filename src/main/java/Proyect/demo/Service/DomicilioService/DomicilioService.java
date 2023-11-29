@@ -1,7 +1,7 @@
 package Proyect.demo.Service.DomicilioService;
 
 
-import Proyect.demo.Entidades.Categoria;
+
 import Proyect.demo.Entidades.Domicilio;
 import Proyect.demo.Service.BaseService.BaseService;
 import org.springframework.data.domain.Page;

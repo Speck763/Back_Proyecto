@@ -22,7 +22,6 @@ public class ClienteServiceImpl extends BaseServiceImpl<Cliente,Long> implements
     public ClienteRepository clienteRepository;
     public ClienteServiceImpl(BaseRepository<Cliente, Long> baseRepository, ClienteRepository clienteRepository) {
         super(baseRepository);
-        this.clienteRepository = clienteRepository;
     }
 
     @Override

@@ -2,6 +2,7 @@ package Proyect.demo.Controller;
 
 import Proyect.demo.Entidades.Cliente;
 import Proyect.demo.Service.CategoriaService.CategoriaServiceImpl;
+import Proyect.demo.Service.ClienteService.ClienteServiceImpl;
 import ch.qos.logback.core.net.server.Client;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;

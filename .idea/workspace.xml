@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="/commit/ prueba1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DetalleFacturaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DomicilioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/FacturaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/FormularioReembolsoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/InfoEnvioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/LocalidadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/PedidoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/PedidoProductoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ProductoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ProvinciaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/CategoriaService/CategoriaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/CategoriaService/CategoriaServiceImpl.java" afterDir="false" />
+    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="los que le sirvo señor v2">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DetalleFacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DetalleFacturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DomicilioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DomicilioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DomicilioService/DomicilioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DomicilioService/DomicilioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DomicilioService/DomicilioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DomicilioService/DomicilioServiceImpl.java" afterDir="false" />
     </list>
     <list id="54831784-898e-4000-83aa-e2e25e4807ad" name="Changes by ivancho" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +21,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,21 +60,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/desarrollo/El Buen Sabor/El-Buen-Sabor/El_Buen_Sabor",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/desarrollo/El Buen Sabor/El-Buen-Sabor/El_Buen_Sabor&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Back_Proyecto" />
