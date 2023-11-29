@@ -4,34 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="tipico, te pones a codear y te trabas 3hrs porque tenias un error en una letra, no es como que me haya pasado...">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/CategoriaService/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/CategoriaService/CategoriaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/CategoriaService/CategoriaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/CategoriaService/CategoriaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ClienteService/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ClienteService/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ClienteService/ClienteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ClienteService/ClienteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DetalleFacturaService/DetalleFacturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DetalleFacturaService/DetalleFacturaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DetalleFacturaService/DetalleFacturaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DetalleFacturaService/DetalleFacturaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DomicilioService/DomicilioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DomicilioService/DomicilioService.java" afterDir="false" />
+    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="pov te equivocaste y tuviste que cambiar todo de nuevo">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DetalleFacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DetalleFacturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DomicilioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/DomicilioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/FacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/FacturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/FormularioReembolsoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/FormularioReembolsoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/InfoEnvioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/InfoEnvioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/LocalidadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/LocalidadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/PedidoProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/PedidoProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ProvinciaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/ProvinciaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/CategoriaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/CategoriaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/DetalleFacturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/DetalleFacturaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/DomicilioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/DomicilioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/FacturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/FacturaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/FormularioReembolsoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/FormularioReembolsoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/InfoEnvioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/InfoEnvioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/LocalidadRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/LocalidadRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/PedidoProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/PedidoProductoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/PedidoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/PedidoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ProductoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ProvinciaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ProvinciaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/UsuarioRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DomicilioService/DomicilioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/DomicilioService/DomicilioServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/FacturaService/FacturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/FacturaService/FacturaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/FacturaService/FacturaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/FacturaService/FacturaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/FormularioReembolsoService/FormularioReembolsoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/FormularioReembolsoService/FormularioReembolsoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/FormularioReembolsoService/FormularioReembolsoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/FormularioReembolsoService/FormularioReembolsoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/InfoEnvioService/InfoEnvioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/InfoEnvioService/InfoEnvioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/InfoEnvioService/InfoEnvioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/InfoEnvioService/InfoEnvioServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/LocalidadService/LocalidadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/LocalidadService/LocalidadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/LocalidadService/LocalidadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/LocalidadService/LocalidadServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/PedidoProductoService/PedidoProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/PedidoProductoService/PedidoProductoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/PedidoProductoService/PedidoProductoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/PedidoProductoService/PedidoProductoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/PedidoService/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/PedidoService/PedidoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/PedidoService/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/PedidoService/PedidoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ProductoService/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ProductoService/ProductoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ProductoService/ProductoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ProductoService/ProductoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ProvinciaService/ProvinciaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ProvinciaService/ProvinciaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ProvinciaService/ProvinciaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ProvinciaService/ProvinciaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/UsuarioService/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/UsuarioService/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/UsuarioService/UsuarioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/UsuarioService/UsuarioServiceImpl.java" afterDir="false" />
     </list>
     <list id="54831784-898e-4000-83aa-e2e25e4807ad" name="Changes by ivancho" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,23 +85,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/desarrollo/El Buen Sabor/El-Buen-Sabor/El_Buen_Sabor",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "9de0862494cc3aa211be7c76dc6b547b",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/desarrollo/demo/Back_Proyecto&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9de0862494cc3aa211be7c76dc6b547b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Back_Proyecto" />
@@ -132,6 +135,9 @@
       <updated>1701201893353</updated>
       <workItem from="1701201899971" duration="11201000" />
       <workItem from="1701284050571" duration="7841000" />
+      <workItem from="1701292255339" duration="847000" />
+      <workItem from="1701294624321" duration="34000" />
+      <workItem from="1701294672536" duration="3595000" />
     </task>
     <task id="LOCAL-00001" summary="se prendio esta mierda, pdt tuve que volver a haecerlo">
       <option name="closed" value="true" />
@@ -173,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701291036999</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pov te equivocaste y tuviste que cambiar todo de nuevo">
+      <option name="closed" value="true" />
+      <created>1701292305334</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701292305334</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +211,7 @@
     <MESSAGE value="El diablo v1" />
     <MESSAGE value="/commit/ prueba1" />
     <MESSAGE value="tipico, te pones a codear y te trabas 3hrs porque tenias un error en una letra, no es como que me haya pasado..." />
-    <option name="LAST_COMMIT_MESSAGE" value="tipico, te pones a codear y te trabas 3hrs porque tenias un error en una letra, no es como que me haya pasado..." />
+    <MESSAGE value="pov te equivocaste y tuviste que cambiar todo de nuevo" />
+    <option name="LAST_COMMIT_MESSAGE" value="pov te equivocaste y tuviste que cambiar todo de nuevo" />
   </component>
 </project>

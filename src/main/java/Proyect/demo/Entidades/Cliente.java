@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,6 +23,15 @@ public class Cliente extends Base{
     private String nombre;
     @Column(name = "apellido")
     private String apellido;
+    @Column(name = "telefono")
+    private String telefono;
     @Column(name = "email")
     private String email;
+    @Column(name = "fecha Alta")
+    private Date fechaAlta;
+    @Column(name = "fecha modificacion")
+    private Date fechaModificacion;
+    @Column(name = "fechaBaja")
+    private Date fechaBaja;
+
 }

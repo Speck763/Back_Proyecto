@@ -26,7 +26,8 @@ public class FormularioReembolsoServiceImpl extends BaseServiceImpl<FormularioRe
     @Override
     public List<FormularioReembolso> search(String filtro) throws Exception {
         try {
-            List<FormularioReembolso> formularioReembolsos = FormularioReembolsoRepository.search(filtro);
+            List<FormularioReembolso> formularioReembolsos = formularioReembolsoRepository.search(filtro);
+            return formularioReembolsos;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -35,7 +36,8 @@ public class FormularioReembolsoServiceImpl extends BaseServiceImpl<FormularioRe
     @Override
     public Page<FormularioReembolso> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<FormularioReembolso> formularioReembolsos = FormularioReembolsoRepository.search(filtro, pageable);
+            Page<FormularioReembolso> formularioReembolsos = formularioReembolsoRepository.search(filtro, pageable);
+            return formularioReembolsos;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

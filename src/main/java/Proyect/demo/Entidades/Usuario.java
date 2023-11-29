@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,9 +21,17 @@ public class Usuario extends Base{
     private String nombreUsuario;
     @Column(name = "contraseña")
     private String contraseña;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "fecha_Alta")
+    private Date fechaAlta;
+    @Column(name = "fecha_Modificacion")
+    private Date fechaModificacion;
+    @Column(name = "fecha_Baja")
+    private Date fechaBaja;
+
     @Enumerated(EnumType.STRING)
     private Rol rol;
-
 
     public enum Rol{
         ADMINISTRADOR,

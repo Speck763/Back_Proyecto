@@ -27,7 +27,8 @@ public class DetalleFacturaServiceImpl extends BaseServiceImpl<DetalleFactura,Lo
     @Override
     public List<DetalleFactura> search(String filtro) throws Exception {
         try {
-            List<DetalleFactura> detalleFacturas = DetalleFacturaRepository.search(filtro);
+            List<DetalleFactura> detalleFacturas = detalleFacturaRepository.search(filtro);
+            return detalleFacturas;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -36,7 +37,8 @@ public class DetalleFacturaServiceImpl extends BaseServiceImpl<DetalleFactura,Lo
     @Override
     public Page<DetalleFactura> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<DetalleFactura> detalleFacturas = DetalleFacturaRepository.search(filtro, pageable);
+            Page<DetalleFactura> detalleFacturas = detalleFacturaRepository.search(filtro, pageable);
+            return detalleFacturas;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

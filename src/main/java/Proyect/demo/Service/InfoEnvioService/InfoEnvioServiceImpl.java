@@ -25,7 +25,8 @@ public class InfoEnvioServiceImpl extends BaseServiceImpl<InfoEnvio,Long> implem
     @Override
     public List<InfoEnvio> search(String filtro) throws Exception {
         try {
-            List<InfoEnvio> infoEnvios = InfoEnvioRepository.search(filtro);
+            List<InfoEnvio> infoEnvios = infoEnvioRepository.search(filtro);
+            return infoEnvios;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -34,7 +35,8 @@ public class InfoEnvioServiceImpl extends BaseServiceImpl<InfoEnvio,Long> implem
     @Override
     public Page<InfoEnvio> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<InfoEnvio> infoEnvios = InfoEnvioRepository.search(filtro, pageable);
+            Page<InfoEnvio> infoEnvios = infoEnvioRepository.search(filtro, pageable);
+            return infoEnvios;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

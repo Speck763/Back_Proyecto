@@ -25,7 +25,8 @@ public class PedidoProductoServiceImpl extends BaseServiceImpl<PedidoProducto,Lo
     @Override
     public List<PedidoProducto> search(String filtro) throws Exception {
         try {
-            List<PedidoProducto> pedidoProductos = PedidoProductoRepository.search(filtro);
+            List<PedidoProducto> pedidoProductos = pedidoProductoRepository.search(filtro);
+            return pedidoProductos;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -34,7 +35,8 @@ public class PedidoProductoServiceImpl extends BaseServiceImpl<PedidoProducto,Lo
     @Override
     public Page<PedidoProducto> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<PedidoProducto> pedidoProductos = PedidoProductoRepository.search(filtro, pageable);
+            Page<PedidoProducto> pedidoProductos = pedidoProductoRepository.search(filtro, pageable);
+            return pedidoProductos;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

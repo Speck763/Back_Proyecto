@@ -25,7 +25,8 @@ public class ProductoServiceImpl extends BaseServiceImpl<Producto,Long> implemen
     @Override
     public List<Producto> search(String filtro) throws Exception {
         try {
-            List<Producto> productos = ProductoRepository.search(filtro);
+            List<Producto> productos = productoRepository.search(filtro);
+            return productos;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -34,7 +35,8 @@ public class ProductoServiceImpl extends BaseServiceImpl<Producto,Long> implemen
     @Override
     public Page<Producto> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Producto> productos = ProductoRepository.search(filtro, pageable);
+            Page<Producto> productos = productoRepository.search(filtro, pageable);
+            return productos;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

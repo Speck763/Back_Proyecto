@@ -25,7 +25,8 @@ public class UsuarioServiceImpl extends BaseServiceImpl<Usuario,Long> implements
     @Override
     public List<Usuario> search(String filtro) throws Exception {
         try {
-            List<Usuario> usuarios = UsuarioRepository.search(filtro);
+            List<Usuario> usuarios = usuarioRepository.search(filtro);
+            return usuarios;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -34,7 +35,8 @@ public class UsuarioServiceImpl extends BaseServiceImpl<Usuario,Long> implements
     @Override
     public Page<Usuario> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Usuario> usuarios = UsuarioRepository.search(filtro, pageable);
+            Page<Usuario> usuarios = usuarioRepository.search(filtro, pageable);
+            return usuarios;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

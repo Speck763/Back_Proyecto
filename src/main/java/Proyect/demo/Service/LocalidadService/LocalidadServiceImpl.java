@@ -26,7 +26,8 @@ public class LocalidadServiceImpl extends BaseServiceImpl<Localidad,Long> implem
     @Override
     public List<Localidad> search(String filtro) throws Exception {
         try {
-            List<Localidad> localidades = LocalidadRepository.search(filtro);
+            List<Localidad> localidades = localidadRepository.search(filtro);
+            return localidades;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -35,7 +36,8 @@ public class LocalidadServiceImpl extends BaseServiceImpl<Localidad,Long> implem
     @Override
     public Page<Localidad> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Localidad> localidades = LocalidadRepository.search(filtro, pageable);
+            Page<Localidad> localidades = localidadRepository.search(filtro, pageable);
+            return localidades;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

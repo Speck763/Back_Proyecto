@@ -19,13 +19,13 @@ public class CategoriaServiceImpl extends BaseServiceImpl<Categoria, Long> imple
 
     public CategoriaServiceImpl(BaseRepository<Categoria, Long> baseRepository, CategoriaRepository categoriaRepository) {
         super(baseRepository);
-        this.categoriaRepository = categoriaRepository;
     }
 
     @Override
     public List<Categoria> search(String filtro) throws Exception {
         try {
-            List<Categoria> categorias = CategoriaRepository.search(filtro);
+            List<Categoria> categorias = categoriaRepository.search(filtro);
+            return categorias;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -34,7 +34,8 @@ public class CategoriaServiceImpl extends BaseServiceImpl<Categoria, Long> imple
     @Override
     public  Page<Categoria> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Categoria> categorias = CategoriaRepository.search(filtro);
+            Page<Categoria> categorias = categoriaRepository.search(filtro, pageable);
+            return categorias;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

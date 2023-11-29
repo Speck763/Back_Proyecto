@@ -17,8 +17,6 @@ import lombok.Setter;
 @Table(name = "Categoria")
 public class Categoria extends Base{
 
-    @Column(name = "calle")
-    private String calle;
-    @Column(name = "nroCasa")
-    private int nroCasa;
+    @Column(name = "nombreCategoria")
+    private String nombreCaegoria;
 }

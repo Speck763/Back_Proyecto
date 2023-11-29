@@ -26,7 +26,8 @@ public class DomicilioServiceImpl  extends BaseServiceImpl<Domicilio,Long> imple
     @Override
     public List<Domicilio> search(String filtro) throws Exception {
         try {
-            List<Domicilio> domicilios = DomicilioRepository.search(filtro);
+            List<Domicilio> domicilios = domicilioRepository.search(filtro);
+            return domicilios;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -35,7 +36,8 @@ public class DomicilioServiceImpl  extends BaseServiceImpl<Domicilio,Long> imple
     @Override
     public Page<Domicilio> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Domicilio> domicilios= DomicilioRepository.search(filtro, pageable);
+            Page<Domicilio> domicilios= domicilioRepository.search(filtro, pageable);
+            return domicilios;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

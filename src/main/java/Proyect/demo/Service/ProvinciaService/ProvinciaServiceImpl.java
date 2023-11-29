@@ -17,7 +17,7 @@ import java.util.List;
 @Service
 public class ProvinciaServiceImpl extends BaseServiceImpl<Provincia,Long> implements ProvinciaService {
     @Autowired
-    public ProvinciaRepository ProvinciaRepository;
+    public ProvinciaRepository provinciaRepository;
     public ProvinciaServiceImpl(BaseRepository<Provincia, Long> baseRepository, ProvinciaRepository provinciaRepository) {
         super(baseRepository);
     }
@@ -25,7 +25,8 @@ public class ProvinciaServiceImpl extends BaseServiceImpl<Provincia,Long> implem
     @Override
     public List<Provincia> search(String filtro) throws Exception {
         try {
-            List<Provincia> provincias = ProvinciaRepository.search(filtro);
+            List<Provincia> provincias = provinciaRepository.search(filtro);
+            return provincias;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
@@ -34,7 +35,8 @@ public class ProvinciaServiceImpl extends BaseServiceImpl<Provincia,Long> implem
     @Override
     public Page<Provincia> search(String filtro, Pageable pageable) throws Exception {
         try{
-            Page<Provincia> provincias = ProvinciaRepository.search(filtro, pageable);
+            Page<Provincia> provincias = provinciaRepository.search(filtro, pageable);
+            return provincias;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
