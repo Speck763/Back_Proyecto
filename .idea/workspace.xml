@@ -4,13 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/BaseControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/BaseServiceImpl.java" afterDir="false" />
+    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="no entendi este">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Controller/CategoriaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/CategoriaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/DetalleFacturaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/DomicilioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/FacturaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/FormularioReembolsoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/InfoEnvioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/LocalidadRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/PedidoProductoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/PedidoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/CategoriaService/CategoriaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/CategoriaService/CategoriaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ClienteService/ClienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/ClienteService/ClienteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <list id="54831784-898e-4000-83aa-e2e25e4807ad" name="Changes by ivancho" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ProductoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/ProvinciaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/BaseService/BaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Service/BaseService/BaseServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,10 +61,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Yopf9eMN7nTJTNBmyRDZA4nfiI" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,6 +77,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/desarrollo/El Buen Sabor/El-Buen-Sabor/El_Buen_Sabor",
@@ -126,9 +152,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="se prendio esta mierda, pdt tuve que volver a haecerlo" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="no entendi este" />
+    <option name="LAST_COMMIT_MESSAGE" value="no entendi este" />
   </component>
 </project>
