@@ -31,4 +31,8 @@ public class Factura extends Base{
         MASTERCARD,
         VISA
     }
+
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JoinColumn(name = "pk_factura")
+    private DetalleFactura detalleFactura;
 }

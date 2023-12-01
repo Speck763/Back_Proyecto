@@ -1,12 +1,13 @@
 package Proyect.demo.Entidades;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -18,4 +19,12 @@ public class Provincia extends Base{
 
     @Column(name = "nombreProvincia")
     private String nombreProvincia;
+
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
+    @JoinColumn(name = "fk_provincia")
+    private List<Localidad> localidades = new ArrayList<Localidad>();
+
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
+    @JoinColumn(name = "fk_provincia")
+    private List<Cliente> clientes = new ArrayList<Cliente>();
 }

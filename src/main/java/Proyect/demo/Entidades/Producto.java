@@ -1,8 +1,6 @@
 package Proyect.demo.Entidades;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,4 +24,8 @@ public class Producto extends Base{
     private double precioVenta;
     @Column(name = "stock")
     private int stock;
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "fk_procucto")
+    private Categoria categoria;
 }

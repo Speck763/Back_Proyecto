@@ -1,8 +1,6 @@
 package Proyect.demo.Entidades;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,4 +19,8 @@ public class Localidad extends Base{
     private String nombre;
     @Column(name = "codPostal")
     private String codPostal;
+
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = false)
+    @JoinColumn(name = "fk_localidad")
+    private Domicilio domicilio;
 }
