@@ -17,11 +17,11 @@ public class FormularioReembolso extends Base{
     @Column(name = "descripcion")
     private String descripcion;
 
-    @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-    @JoinColumn(name = "fk_formularioReembolso")
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "fk_cliente")
     private Cliente cliente;
 
-    @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-    @JoinColumn(name = "fk_formularioReembolso")
+    @ManyToOne()
+    @JoinColumn(name = "fk_pedido")
     private Pedido pedido;
 }

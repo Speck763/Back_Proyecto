@@ -33,18 +33,18 @@ public class Pedido extends Base{
 
 
     @OneToOne(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "fk_pedido")
+    @JoinColumn(name = "fk_pedidoProducto")
     private PedidoProducto pedidoProducto;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_pedido")
+    @JoinColumn(name = "fk_factura")
     private Factura factura;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "fk_pedido")
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "fk_cliente")
     private Cliente cliente;
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    @JoinColumn(name = "fk_pedido")
+    @JoinColumn(name = "fk_infoEnvio")
     private InfoEnvio infoEnvio;
 }

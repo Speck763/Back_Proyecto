@@ -26,6 +26,6 @@ public class Producto extends Base{
     private int stock;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "fk_procucto")
+    @JoinColumn(name = "fk_categoria")
     private Categoria categoria;
 }

@@ -21,6 +21,6 @@ public class Localidad extends Base{
     private String codPostal;
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = false)
-    @JoinColumn(name = "fk_localidad")
+    @JoinColumn(name = "fk_domicilio")
     private Domicilio domicilio;
 }

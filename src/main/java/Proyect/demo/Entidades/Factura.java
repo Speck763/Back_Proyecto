@@ -33,6 +33,6 @@ public class Factura extends Base{
     }
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "pk_factura")
+    @JoinColumn(name = "pk_detalleFactura")
     private DetalleFactura detalleFactura;
 }

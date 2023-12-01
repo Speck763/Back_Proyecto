@@ -23,6 +23,6 @@ public class DetalleFactura extends Base{
     private double subTotalLinea;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "fk_detaleFactura")
+    @JoinColumn(name = "fk_detale_factura")
     private Producto producto;
 }

@@ -23,6 +23,6 @@ public class PedidoProducto extends Base{
     private double subTotalLinea;
 
     @ManyToOne(cascade = CascadeType.ALL, optional = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "fk_pedidoProducto")
+    @JoinColumn(name = "fk_pedido_producto")
     private Pedido pedido;
 }
