@@ -6,7 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -32,15 +34,11 @@ public class Pedido extends Base{
     }
 
 
-    @OneToOne(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "fk_pedidoProducto")
-    private PedidoProducto pedidoProducto;
-
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_factura")
-    private Factura factura;
-
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<PedidoProducto> pedidoProductos = new ArrayList<PedidoProducto>();
+    
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "fk_cliente")
     private Cliente cliente;
 
