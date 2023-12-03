@@ -15,7 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Getter
 @Setter
-@Table(name = "Doicilio")
+@Table(name = "Domicilio")
 
 public class Domicilio extends Base{
 

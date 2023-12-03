@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="lpm trolleo como los mejores">
+    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="/commit/ arreglo">
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/DetalleFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/DetalleFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Domicilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Domicilio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="54831784-898e-4000-83aa-e2e25e4807ad" name="Changes by ivancho" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,8 +85,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/desarrollo/El-Buen-Sabor-master/Backend_ElBuenSabor",
+    "git-widget-placeholder": "develop-ivan",
+    "last_opened_file_path": "D:/Facu/Programacion/proyecto/Back_proyecto",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -135,6 +139,8 @@
       <workItem from="1701457392562" duration="12890000" />
       <workItem from="1701529497036" duration="534000" />
       <workItem from="1701552722952" duration="8181000" />
+      <workItem from="1701569950825" duration="1837000" />
+      <workItem from="1701605101182" duration="2722000" />
     </task>
     <task id="LOCAL-00001" summary="se prendio esta mierda, pdt tuve que volver a haecerlo">
       <option name="closed" value="true" />
@@ -216,18 +222,53 @@
       <option name="project" value="LOCAL" />
       <updated>1701561982693</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="/commit/ arreglo">
+      <option name="closed" value="true" />
+      <created>1701570920077</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701570920077</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="develop" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -245,6 +286,7 @@
     <MESSAGE value="¿Si el calor es tan bueno, porque no vencio a los franceses y a los alemanes y el frio si?" />
     <MESSAGE value="lpm trlleo como los mejores" />
     <MESSAGE value="lpm trolleo como los mejores" />
-    <option name="LAST_COMMIT_MESSAGE" value="lpm trolleo como los mejores" />
+    <MESSAGE value="/commit/ arreglo" />
+    <option name="LAST_COMMIT_MESSAGE" value="/commit/ arreglo" />
   </component>
 </project>

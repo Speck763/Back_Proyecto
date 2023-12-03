@@ -35,7 +35,7 @@ public class Factura extends Base{
     }
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name = "pk_detalleFactura")
+    @JoinColumn(name = "pk_detalleFactura1")
     private List<DetalleFactura> detalleFactura = new ArrayList<DetalleFactura>();
 
     @OneToOne(cascade = CascadeType.ALL)
