@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,7 +23,7 @@ public class Localidad extends Base{
     @Column(name = "codPostal")
     private String codPostal;
 
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = false)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = false)
     @JoinColumn(name = "fk_domicilio")
-    private Domicilio domicilio;
+    private List<Domicilio> domicilios = new ArrayList<Domicilio>();
 }

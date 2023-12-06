@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -32,7 +34,15 @@ public class Factura extends Base{
         VISA
     }
 
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "pk_detalleFactura")
-    private DetalleFactura detalleFactura;
+    private List<DetalleFactura> detalleFactura = new ArrayList<DetalleFactura>();
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "fk_pedido")
+    private Pedido pedido;
+
+    @ManyToOne (cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "fk_cliente")
+    private Cliente cliente;
 }
