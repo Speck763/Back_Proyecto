@@ -1,12 +1,12 @@
 package Proyect.demo.Entidades;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.Date;
 
 @Entity
 @NoArgsConstructor
@@ -23,4 +23,17 @@ public class Categoria extends Base{
     private String descripcionCategoria;
     @Column(name="imagenCategoria")
     private String imagenCategoria;
+    @Enumerated(EnumType.STRING)
+    private Categoria.EstadoCategoria estadoCategoria;
+    public enum EstadoCategoria{
+        Habilitado,
+        Baja
+
+    }
+
+    @Column(name = "fechaAltaCategoria")
+    private Date fechaAltaCategoria;
+    @Column(name = "fechaBajaCategoria")
+    private Date fechaBajaCategoria;
+
 }
