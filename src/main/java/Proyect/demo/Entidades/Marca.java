@@ -22,5 +22,7 @@ public class Marca extends Base{
     @Column(name = "descripcionMarca")
     private String descripcionMarca;
 
+    private String imagen;
+
 
 }

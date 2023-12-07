@@ -19,4 +19,6 @@ public class Categoria extends Base{
 
     @Column(name = "nombreCategoria")
     private String nombreCaegoria;
+
+    private String imagen;
 }

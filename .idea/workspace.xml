@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="por  eso esperaba con la carita empapada" />
+    <list default="true" id="a5419920-6dda-4404-9521-66c7aeb9ac7d" name="Changes" comment="que llegaras con rosas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/DetalleFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/DetalleFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Marca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Entidades/Marca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/DetalleFacturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proyect/demo/Repository/DetalleFacturaRepository.java" afterDir="false" />
+    </list>
     <list id="54831784-898e-4000-83aa-e2e25e4807ad" name="Changes by ivancho" comment="" />
     <list id="91f53657-5f9a-46a2-90e0-64bc3600d562" name="Changes by Windows" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +82,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "develop-ber",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "D:/desarrollo/El-Buen-Sabor-master/Backend_ElBuenSabor",
     "node.js.detected.package.eslint": "true",
@@ -135,6 +142,9 @@
       <workItem from="1701798460028" duration="5440000" />
       <workItem from="1701819882862" duration="2665000" />
       <workItem from="1701876034131" duration="682000" />
+      <workItem from="1701877023256" duration="1105000" />
+      <workItem from="1701906369249" duration="269000" />
+      <workItem from="1701906858981" duration="4225000" />
     </task>
     <task id="LOCAL-00001" summary="se prendio esta mierda, pdt tuve que volver a haecerlo">
       <option name="closed" value="true" />
@@ -224,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701569375710</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="que llegaras con rosas">
+      <option name="closed" value="true" />
+      <created>1701877174799</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701877174799</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +272,8 @@
     <MESSAGE value="lpm trlleo como los mejores" />
     <MESSAGE value="lpm trolleo como los mejores" />
     <MESSAGE value="por  eso esperaba con la carita empapada" />
-    <option name="LAST_COMMIT_MESSAGE" value="por  eso esperaba con la carita empapada" />
+    <MESSAGE value="que llegaras con rosas" />
+    <option name="LAST_COMMIT_MESSAGE" value="que llegaras con rosas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

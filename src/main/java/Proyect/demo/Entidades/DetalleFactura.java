@@ -21,6 +21,8 @@ public class DetalleFactura extends Base{
     private int nroLinea;
     @Column(name = "subTotalLinea")
     private double subTotalLinea;
+    @Column(name = "cantidadVentas")
+    private Long cantidadVentas;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "fk_producto")
