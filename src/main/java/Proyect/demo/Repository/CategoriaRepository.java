@@ -12,8 +12,8 @@ import java.util.List;
 @Repository
 public interface CategoriaRepository extends BaseRepository<Categoria, Long> {
 
-    @Query(value = "SELECT ca FROM Categoria ca WHERE ca.nombreCaegoria like '%1%'")
+    @Query(value = "SELECT ca FROM Categoria ca WHERE ca.nombreCategoria like '%1%'")
     List<Categoria> search(String filtro);
-    @Query(value= "SELECT ca FROM Categoria ca WHERE ca.nombreCaegoria like '%1%'")
+    @Query(value= "SELECT ca FROM Categoria ca WHERE ca.nombreCategoria like '%1%'")
     Page<Categoria> search(String filtro, Pageable pageable);
 }
