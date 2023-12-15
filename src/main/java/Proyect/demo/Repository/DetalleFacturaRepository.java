@@ -1,6 +1,7 @@
 package Proyect.demo.Repository;
 
 
+import Proyect.demo.DTOs.DTODetalleFactura;
 import Proyect.demo.Entidades.*;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -25,5 +26,5 @@ public interface DetalleFacturaRepository extends BaseRepository<DetalleFactura,
             "JOIN Producto p ON df.producto.id = p.id " +
             "GROUP BY df.producto.id, p.nombreProducto " +
             "ORDER BY cantidad_vendida DESC ")
-    List<Object[]>PrductosMasVendidos();
+    List<DTODetalleFactura>PrductosMasVendidos();
 }
