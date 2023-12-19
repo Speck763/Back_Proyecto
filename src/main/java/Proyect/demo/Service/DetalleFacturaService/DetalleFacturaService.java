@@ -1,5 +1,6 @@
 package Proyect.demo.Service.DetalleFacturaService;
 
+import Proyect.demo.DTOs.DTODetalleFactura;
 import Proyect.demo.Entidades.Cliente;
 import Proyect.demo.Entidades.DetalleFactura;
 import Proyect.demo.Service.BaseService.BaseService;
@@ -11,4 +12,5 @@ import java.util.List;
 public interface DetalleFacturaService extends BaseService<DetalleFactura, Long> {
     List<DetalleFactura> search(String filtro) throws Exception;
     Page<DetalleFactura> search(String filtro, Pageable pageable) throws Exception;
+    List<DTODetalleFactura>PrductosMasVendidos() throws Exception;
 }

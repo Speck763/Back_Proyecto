@@ -31,4 +31,57 @@ public class ProductoController extends BaseControllerImpl<Producto, ProductoSer
         }
     }
 
+    @GetMapping("/ProductosOrdenadosAZ")
+    public ResponseEntity<?> findAllProductosOrdenadosAZ(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosOrdenadosAZ());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
+
+    @GetMapping("/ProductosOrdenadosZA")
+    public ResponseEntity<?> findAllProductosOrdenadosZA(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosOrdenadosZA());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
+
+    @GetMapping("/ProductosOrdenadosMasBarato")
+    public ResponseEntity<?> findAllProductosOrdenadosMasBarato(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosOrdenadosMasBarato());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
+
+    @GetMapping("/ProductosOrdenadosMasCaro")
+    public ResponseEntity<?> findAllProductosOrdenadosMasCaro(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosOrdenadosMasCaro());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
+
+    @GetMapping("/ProductosOrdenadosViejo")
+    public ResponseEntity<?> findAllProductosOrdenadosViejo(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosOrdenadosViejo());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
+
+    @GetMapping("/ProductosOrdenadosNuevo")
+    public ResponseEntity<?> findAllProductosOrdenadosNuevo(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosOrdenadosNuevo());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
 }

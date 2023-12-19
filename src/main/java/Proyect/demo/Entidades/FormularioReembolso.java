@@ -21,7 +21,7 @@ public class FormularioReembolso extends Base{
     @JoinColumn(name = "fk_cliente")
     private Cliente cliente;
 
-    @ManyToOne()
+    @OneToOne()
     @JoinColumn(name = "fk_pedido")
     private Pedido pedido;
 }

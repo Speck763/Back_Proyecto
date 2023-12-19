@@ -1,5 +1,6 @@
 package Proyect.demo.Service.DetalleFacturaService;
 
+import Proyect.demo.DTOs.DTODetalleFactura;
 import Proyect.demo.Entidades.Cliente;
 import Proyect.demo.Entidades.DetalleFactura;
 import Proyect.demo.Repository.BaseRepository;
@@ -43,5 +44,16 @@ public class DetalleFacturaServiceImpl extends BaseServiceImpl<DetalleFactura,Lo
             throw new Exception(e.getMessage());
         }
     }
+
+    @Override
+    public List<DTODetalleFactura> PrductosMasVendidos() throws Exception {
+        try{
+            List<DTODetalleFactura> dtoDetalleFacturas = detalleFacturaRepository.PrductosMasVendidos();
+            return dtoDetalleFacturas;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
 
 }

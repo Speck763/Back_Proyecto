@@ -34,9 +34,9 @@ public class Cliente extends Base{
     @Column(name = "fechaBaja")
     private Date fechaBaja;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "fk_domicilio")
-    private List<Domicilio> domicilios = new ArrayList<Domicilio>();
+    private Domicilio domicilios;
 
     @OneToOne(cascade = CascadeType.ALL, fetch =FetchType.EAGER)
     @JoinColumn(name = "fk_usuario")
