@@ -23,8 +23,16 @@ public interface ProductoRepository extends BaseRepository<Producto, Long>{
     @Query("SELECT p FROM Producto p ORDER BY p.nombreProducto ASC")
     List<Producto> findAllProductosOrdenadosAZ();
 
-    @Query("SELECT p FROM Producto p ORDER BY p.nombreProducto ASC")
+    @Query("SELECT p FROM Producto p ORDER BY p.nombreProducto DESC ")
     List<Producto> findAllProductosOrdenadosZA();
 
+    @Query("SELECT p FROM Producto p ORDER BY p.precioVenta ASC")
+    List<Producto> findAllProductosOrdenadosMasBarato();
+    @Query("SELECT p FROM Producto p ORDER BY p.precioVenta DESC")
+    List<Producto> findAllProductosOrdenadosMasCaro();
 
+    @Query("SELECT p FROM Producto p ORDER BY p.fechaAlta ASC ")
+    List<Producto> findAllProductosOrdenadosViejo();
+    @Query("SELECT p FROM Producto p ORDER BY p.fechaAlta DESC ")
+    List<Producto> findAllProductosOrdenadosNuevo();
 }

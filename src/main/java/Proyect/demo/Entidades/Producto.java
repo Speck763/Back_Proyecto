@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,6 +26,13 @@ public class Producto extends Base{
     private double precioVenta;
     @Column(name = "stock")
     private int stock;
+    @Column(name = "fechaAlta")
+    @Temporal(TemporalType.DATE)
+    private Date fechaAlta;
+    @Column(name = "fechaBaja")
+    @Temporal(TemporalType.DATE)
+    private Date fechaBaja;
+
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "fk_categoria")

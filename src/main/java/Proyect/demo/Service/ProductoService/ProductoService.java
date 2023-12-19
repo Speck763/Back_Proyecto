@@ -14,4 +14,8 @@ public interface ProductoService extends BaseService<Producto, Long> {
     Page<Producto> search(String filtro, Pageable pageable) throws Exception;
     List<Producto> findAllProductosOrdenadosAZ() throws Exception;
     List<Producto> findAllProductosOrdenadosZA() throws Exception;
+    List<Producto> findAllProductosOrdenadosMasBarato() throws Exception;
+    List<Producto> findAllProductosOrdenadosMasCaro() throws Exception;
+    List<Producto> findAllProductosOrdenadosViejo() throws Exception;
+    List<Producto> findAllProductosOrdenadosNuevo() throws Exception;
 }

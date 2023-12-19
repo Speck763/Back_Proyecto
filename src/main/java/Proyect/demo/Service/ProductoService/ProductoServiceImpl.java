@@ -61,4 +61,44 @@ public class ProductoServiceImpl extends BaseServiceImpl<Producto,Long> implemen
             throw new Exception(e.getMessage());
         }
     }
+
+    @Override
+    public List<Producto> findAllProductosOrdenadosMasBarato() throws Exception {
+        try {
+            List<Producto> productos = productoRepository.findAllProductosOrdenadosMasBarato();
+            return productos;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public List<Producto> findAllProductosOrdenadosMasCaro() throws Exception {
+        try {
+            List<Producto> productos = productoRepository.findAllProductosOrdenadosMasCaro();
+            return productos;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public List<Producto> findAllProductosOrdenadosViejo() throws Exception {
+        try {
+            List<Producto> productos = productoRepository.findAllProductosOrdenadosViejo();
+            return productos;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public List<Producto> findAllProductosOrdenadosNuevo() throws Exception {
+        try {
+            List<Producto> productos = productoRepository.findAllProductosOrdenadosNuevo();
+            return productos;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
 }
