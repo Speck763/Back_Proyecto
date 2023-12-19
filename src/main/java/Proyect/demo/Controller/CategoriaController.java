@@ -30,4 +30,12 @@ public class CategoriaController extends BaseControllerImpl<Categoria, Categoria
         }
     }
 
+    @GetMapping("/ProductosByCategoria")
+    public ResponseEntity<?> findAllProductosByCategoria(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosByCategoria());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
 }

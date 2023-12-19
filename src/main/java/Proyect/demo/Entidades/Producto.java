@@ -28,4 +28,8 @@ public class Producto extends Base{
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "fk_categoria")
     private Categoria categoria;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_marca")
+    private Marca marca;
 }

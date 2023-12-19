@@ -31,4 +31,21 @@ public class ProductoController extends BaseControllerImpl<Producto, ProductoSer
         }
     }
 
+    @GetMapping("/ProductosOrdenadosAZ")
+    public ResponseEntity<?> findAllProductosOrdenadosAZ(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosOrdenadosAZ());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
+
+    @GetMapping("/ProductosOrdenadosZA")
+    public ResponseEntity<?> findAllProductosOrdenadosZA(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosOrdenadosZA());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
 }

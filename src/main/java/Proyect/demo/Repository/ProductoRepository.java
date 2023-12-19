@@ -1,5 +1,6 @@
 package Proyect.demo.Repository;
 
+import Proyect.demo.DTOs.ProductoMarcaDTO;
 import Proyect.demo.Entidades.Domicilio;
 import Proyect.demo.Entidades.Pedido;
 import Proyect.demo.Entidades.Producto;
@@ -18,4 +19,12 @@ public interface ProductoRepository extends BaseRepository<Producto, Long>{
     List<Producto> search(String filtro);
     @Query(value= "SELECT pr FROM Producto pr WHERE pr.nombreProducto like '%1%'")
     Page<Producto> search(String filtro, Pageable pageable);
+
+    @Query("SELECT p FROM Producto p ORDER BY p.nombreProducto ASC")
+    List<Producto> findAllProductosOrdenadosAZ();
+
+    @Query("SELECT p FROM Producto p ORDER BY p.nombreProducto ASC")
+    List<Producto> findAllProductosOrdenadosZA();
+
+
 }

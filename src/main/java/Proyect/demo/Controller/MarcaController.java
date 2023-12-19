@@ -31,4 +31,13 @@ public class MarcaController extends BaseControllerImpl<Marca, MarcaServiceImpl>
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
         }
     }
+
+    @GetMapping("/ProductosByMarca")
+    public ResponseEntity<?> findAllProductosByMarca(){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findAllProductosByMarca());
+        }catch (Exception e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(("{\"error\": \"" + e.getMessage() + "\"}"));
+        }
+    }
 }

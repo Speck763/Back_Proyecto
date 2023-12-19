@@ -1,6 +1,8 @@
 package Proyect.demo.Service.MarcaService;
 
 
+import Proyect.demo.DTOs.DTODetalleFactura;
+import Proyect.demo.DTOs.ProductoMarcaDTO;
 import Proyect.demo.Entidades.Marca;
 import Proyect.demo.Repository.BaseRepository;
 import Proyect.demo.Repository.MarcaRepository;
@@ -36,6 +38,16 @@ public class MarcaServiceImpl extends BaseServiceImpl<Marca,Long> implements Mar
         try{
             Page<Marca> marcas = marcaRepository.search(filtro, pageable);
             return marcas;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public List<ProductoMarcaDTO> findAllProductosByMarca() throws Exception {
+        try{
+            List<ProductoMarcaDTO> productoMarcaDTOS = marcaRepository.findAllProductosByMarca();
+            return productoMarcaDTOS;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }

@@ -1,6 +1,7 @@
 package Proyect.demo.Service.MarcaService;
 
 
+import Proyect.demo.DTOs.ProductoMarcaDTO;
 import Proyect.demo.Entidades.Marca;
 import Proyect.demo.Service.BaseService.BaseService;
 import org.springframework.data.domain.Page;
@@ -12,4 +13,5 @@ public interface MarcaService extends BaseService<Marca, Long>{
 
     List<Marca> search(String filtro) throws Exception;
     Page<Marca> search(String filtro, Pageable pageable) throws Exception;
+    List<ProductoMarcaDTO> findAllProductosByMarca() throws Exception;
 }

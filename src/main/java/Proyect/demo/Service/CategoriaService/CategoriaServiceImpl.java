@@ -1,5 +1,7 @@
 package Proyect.demo.Service.CategoriaService;
 
+import Proyect.demo.DTOs.ProductoCategoriaDTO;
+import Proyect.demo.DTOs.ProductoMarcaDTO;
 import Proyect.demo.Entidades.Categoria;
 import Proyect.demo.Repository.BaseRepository;
 import Proyect.demo.Repository.CategoriaRepository;
@@ -36,6 +38,16 @@ public class CategoriaServiceImpl extends BaseServiceImpl<Categoria, Long> imple
         try{
             Page<Categoria> categorias = categoriaRepository.search(filtro, pageable);
             return categorias;
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public List<ProductoCategoriaDTO> findAllProductosByCategoria() throws Exception {
+        try{
+            List<ProductoCategoriaDTO> productoCategoriaDTOS = categoriaRepository.findAllProductosByCategoria();
+            return productoCategoriaDTOS;
         } catch (Exception e) {
             throw new Exception(e.getMessage());
         }
