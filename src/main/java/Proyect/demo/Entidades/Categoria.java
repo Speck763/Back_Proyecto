@@ -1,27 +1,37 @@
 package Proyect.demo.Entidades;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.antlr.v4.runtime.misc.NotNull;
 
-import java.util.List;
+import java.util.Date;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-
+@Builder
 @Table(name = "Categoria")
 public class Categoria extends Base{
 
+    @NotNull
     @Column(name = "nombreCategoria")
-    private String nombreCaegoria;
+    private String nombreCategoria;
 
-    private String imagen;
+    @NotNull
+    @Column(name = "url_imagen")
+    private String urlImagen;
 
-    @OneToMany(mappedBy = "fk_producto")
-    private List<Producto> productos;
+    //comentario anti cbum
+    @NotNull
+    @Column(name = "fecha_alta")
+    @Temporal(TemporalType.DATE)
+    private Date fechaAlta;
+
+    //private Date fechaModificacion;
+
+    @Column(name = "fecha_baja")
+    @Temporal(TemporalType.DATE)
+    private Date fechaBaja;
 }
