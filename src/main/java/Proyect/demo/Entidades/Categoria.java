@@ -23,6 +23,7 @@ public class Categoria extends Base{
     @Column(name = "url_imagen")
     private String urlImagen;
 
+    //comentario anti cbum
     @NotNull
     @Column(name = "fecha_alta")
     @Temporal(TemporalType.DATE)
