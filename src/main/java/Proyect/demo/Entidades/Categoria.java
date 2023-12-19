@@ -5,6 +5,7 @@ import lombok.*;
 import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -34,4 +35,7 @@ public class Categoria extends Base{
     @Column(name = "fecha_baja")
     @Temporal(TemporalType.DATE)
     private Date fechaBaja;
+
+    @OneToMany(mappedBy = "fk_producto")
+    private List<Producto> productos;
 }
