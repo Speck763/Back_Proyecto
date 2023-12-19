@@ -15,7 +15,6 @@ import java.util.List;
 @Builder
 @Table(name = "Categoria")
 public class Categoria extends Base{
-
     @NotNull
     @Column(name = "nombreCategoria")
     private String nombreCategoria;
